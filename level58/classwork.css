@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    padding: 20px;
+}
+
+.container {
+    display:flex;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    color: #fff;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.blue  { background: #3a78d8; }
+.yellow { background: #e7b328; }
+.red { background: #e93c3c; }
+.gray { background: #cfcfcf; color: #333; }
