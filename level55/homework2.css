@@ -1,0 +1,22 @@
+.box {
+    border:2px  solid green;
+    width:400px;
+    padding:20px;
+    background-color:white;
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color:gray;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    color:gray;
+}
+
+body {
+    background-color:green;
+}
+
+
