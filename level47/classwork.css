@@ -1,0 +1,43 @@
+button {
+    color:green;
+    background-color:darkblue;
+}
+
+.hex {
+    color:darkred;
+    text-align:center;
+    background-color:darkgreen;
+}
+
+
+#random1 { 
+    background: red;    
+    color: white; 
+
+}
+
+
+#random2  {
+    background: black;  
+    color: yellow; 
+
+}
+
+
+#random3  {
+    background: blue;  
+    color: white; 
+
+}
+
+
+#random4 { 
+    background: green;  
+    color: white; 
+
+}
+#random5  {
+    background: orange; 
+    color: black; 
+
+}
