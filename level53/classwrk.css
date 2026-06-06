@@ -1,0 +1,15 @@
+#myTable td {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: black;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+#myTable tr td:nth-child(2) {
+  color: red;
+  background-color: lightblue;
+  border-style: solid;
+  border-color: green;
+  border-width: 1px;
+}
