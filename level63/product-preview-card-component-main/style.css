@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color:rgb(252, 241, 232);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.main {
+    display:flex;
+    width:580px;
+    background-color:white;
+    height:470px;
+    border-radius:10px;
+}
+
+img {
+    width:290px;
+    height:470px;
+    border-radius:10px;
+}
+
+.p1 {
+    font-size:12px;
+    margin-left:35px;
+    margin-top:30px;
+}
+
+.p2 {
+    font-size:35px;
+    font-family:"Fraunces", serif;
+    font-weight:700;
+    padding:15px;
+}
+
+.p3 {
+    padding:15px;
+    color:gray;
+    font-family:"Montserrat", sans-serif;
+}
+
+.p4 {
+    font-size:34px;
+    color:hsl(158, 36%, 37%);
+    font-family:"Playfair Display", serif;
+    font-weight:900;
+    padding:10px;
+}
+
+.p5 {
+    text-decoration:line-through;
+    color:gray;
+}
+
+.p4, .p5 {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.perfume {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;            
+  height: 48px;
+  background-color: #4a7a63;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top:30px;
+  margin-left:20px;
+}
+
+.button:hover {
+    background-color:#376850;
+}
+
+.button img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
