@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    gap: 20px;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+
+.South_Korea,
+.Tbilisi,
+.New_York,
+.Paris,
+.Tokyo,
+.Dubai {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.South_Korea {
+    background-image: url("https://asiasociety.org/sites/default/files/styles/1200w/public/2021-11/Middle%20Power%20Parallels%20Landing%20Page%20Seoul%20-%20Ciaran-OBrien%20-%20Unsplash.png");
+}
+.Tbilisi {
+    background-image: url("https://misstourist.com/wp-content/uploads/2021/08/Where-to-stay-Tbilisi-SM.jpg");
+}
+.New_York {
+    background-image: url("https://w0.peakpx.com/wallpaper/280/517/HD-wallpaper-blue-aesthetic-new-york-city-buildings-sky-background-blue-aesthetic.jpg");
+}
+.Paris {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrZS1zj52asPUbyDzxGMR_RIhQxbtGX9FmTA&s");
+}
+.Tokyo {
+    background-image: url("https://w0.peakpx.com/wallpaper/883/677/HD-wallpaper-blue-city-japan-city-tokyo-asia-blue-night-thumbnail.jpg");
+}
+.Dubai {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSWqXYk9cbe1OigmtGWumfKBZJBnel9sWfg&s");
+}
