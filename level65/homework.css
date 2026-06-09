@@ -1,0 +1,24 @@
+img {
+    width: 130px;
+    height: 100px;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+
+.images {
+    display:flex;
+    gap:20px;
+}
+
+.images img {
+    border: 3px solid #333;
+    transition: 0.3s ease;
+}
+
+.images img:hover {
+    transform:scale(1.1);
+}
