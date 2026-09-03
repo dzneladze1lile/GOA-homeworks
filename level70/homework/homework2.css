@@ -1,0 +1,32 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color:rgb(92, 92, 214);
+    display:flex;
+    justify-content:center;
+
+}
+
+.circle {
+    border:100px solid rgb(206, 183, 89);
+    border-radius:100%;
+    margin:20px;
+    animation-name:circle;
+    animation-iteration-count: infinite;
+    animation-duration:3s;
+    animation-timing-function:linear;
+}
+
+@keyframes circle {
+    0% {
+        transform:translateY(0);
+    }
+
+    100% {
+        transform:translateY(600px);
+    }
+}
