@@ -1,0 +1,37 @@
+<!-- Class selector-ით შეგიძლია სტილი მიანიჭო html ელემენტებს, რომლებსაც გააჩნიათ კონკრეტული კლასი (class) -->
+<!-- id selector გამოიყენება, რომ სტილი მიანიჭო კონკრეტულად ერთ ელემენტს -->
+<!-- class selector გამოიყენება მაშინ, როცა გვსურს ერთნაირი სტილი მივანიჭოთ ერთზე მეტ ელემენტს
+id selector გამოიყენება მაშინ, როცა სტილი უნდა მივანიჭოთ მხოლოდ ერთ ელემენტს-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="classwork2.css">
+  <style>
+    h1 {
+      color: black;
+      background-color: lightgray;
+    }
+
+    .grouped {
+      color: blue;
+      background-color: lightblue;
+    }
+
+    #special {
+      color: white;
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="grouped">first</h1>
+  <h1 class="grouped">second</h1>
+  <h1 class="grouped">third</h1>
+  <h1 class="grouped">fourth</h1>
+  <h1 id="special">fifth</h1>
+  <h1>sixth</h1>
+</body>
+</html>
+
+        
