@@ -1,0 +1,51 @@
+.alldiv {
+    padding: 20px;
+}
+
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+#div1:hover {
+    transform: translate(50px, 50px);
+}
+
+#div2 {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+#div2:hover {
+    transform: scale(1.5);
+}
+
+#div3 {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+#div3:hover {
+    transform: skew(20deg);
+}
+
+#div4 {
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    margin: 20px;
+    transition: 0.5s;
+}
+
+#div4:hover {
+    transform: rotate(45deg);
+}
