@@ -1,0 +1,20 @@
+#first {
+    text-decoration-line:underline;
+    text-decoration-style:dashed;
+    text-decoration-color:greenyellow;
+}
+
+#second:hover {
+    text-decoration-line: underline;
+    color:orange;
+}
+
+#third:active {
+    color:brown;
+}
+
+#fourth {
+    border: 2px dashed darkred;
+    cursor:alias;
+}
+
