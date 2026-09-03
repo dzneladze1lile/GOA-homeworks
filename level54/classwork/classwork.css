@@ -1,0 +1,7 @@
+.type {
+    list-style-type:upper-alpha;
+}
+
+#type {
+    list-style-type:circle;
+}
