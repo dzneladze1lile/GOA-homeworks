@@ -1,0 +1,35 @@
+<!--type ატრიბუტი გვეუბნება როგორი ტიპის ასაწერი ადგილი გვინდა. მაგალითად: ტექსტი, რიცხვი და ა.შ.-->
+<!--name არის სახელი რომლითაც იგზავნება ჩასაწერი ადგილი სერვერზე-->
+<!--id საჭიროა იმისთის რომ label ს წვდომა ჰქონდეს-->
+<!--placeholder მიგვითითებს თუ რა უნდა ჩავწეროთ ცარიელ გრაფაში-->
+<!--required გვეუბნება რომ გრაფის შევსება აუცილებელი და სავალდებულოა-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ტექნოლოგიების მაღაზია</title>
+    </head>
+    <body>
+        <form>
+        <h1>მოგესალმებით ჩვენს მაღაზიაში</h1>
+        <h2>არსებული პროდუქტები:</h2>
+        <ul>
+            <il>კომპიუტერი - 1500$</il>
+            <il>ტელეფონი - 800$</il>
+            <il>ყურსასმენები - 150$</il>
+        </ul>
+        <label for="product-name">პროდუქტის სახელი:</label><br>
+        <input type="text" id="product-name" name="product-name" placeholder = "ჩაწერეთ პროდუქტის სახელი" required><br><br>
+
+        <label for="price">ფასი:</label><br>
+        <input type="number" id="price" name="price" placeholder = "ფასი" required><br><br>
+
+        <label for="description">აღწერა:</label><br>
+        <input type="text" id="description" name="description" placeholder =" პროდუქტის აღწერა"><br><br>
+
+       <button>Submit</button>
+  </form>
+</body>
+</html>
+
+
