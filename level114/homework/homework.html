@@ -1,0 +1,31 @@
+<!--localStorage არის ბრაუზერის ჩაშენებული მეხსიერების საცავი, რომელიც გვაძლევს საშუალებას შევინახოთ მონაცემები მომხმარებლის კომპიუტერში ხანგრძლივად-->
+<!--event (მოვლენის) ობიექტი არის ავტომატურად შექმნილი ობიექტი, რომელსაც ბრაუზერი გადასცემს იმ ფუნქციას, რომელიც რეაგირებს რაიმე მოვლენაზე (მაგ: click, submit)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+</head>
+<body>
+    <form id = "userForm">
+        <input type = "text" id = "Firstname" name = "Firstname" placeholder = "Enter your Firstname" required>
+        <br><br>
+        <input type = "text" id = "Lastname" name = "Lastname" placeholder = "Enter your Lastname" required>
+        <br><br>
+        <input type = "number" id = "age" name = "age" placeholder = "Enter your age" required>
+        <br><br>
+        <p>Choose your gender</p>
+        <label> male
+            <input type = "radio" id = "gender" name = "gender"  value = "male" required>
+        </label>
+        <br>
+        <label> female
+            <input type = "radio" id = "gender" name = "gender"  value = "female" required>
+        </label>
+        <button>Submit</button>
+    </form>
+    <script src="homework.js"></script>
+</body>
+</html>
