@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>second homework</title>
+    </head>
+    <body>
+        <h1 id = "display">slide 1</h1>
+
+        <button id = "front">front</button>
+        <button id = "back">back</button>
+
+        <script>
+            
+            const slides = ["slide 1", "slide 2", "slide 3", "slide 4", "slide 5"];
+            let position = 0;
+
+            const display = document.getElementById("display");
+            const front = document.getElementById("front");
+            const back = document.getElementById("back");
+
+            front.onclick = function() {
+                if (position < 4) {
+                position = position + 1;
+                display.innerHTML = slides[position]
+            }
+            }
+            back.onclick = function() {
+                if (position > 0) {
+                position = position - 1;
+                display.innerHTML = slides[position]
+            }
+            }
+            
+        </script>
+    </body>
+</html>
