@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    height:100vh;
+    background-color:hsl(202, 86%, 94%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+#main {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    height:600px;
+    width:1000px;
+    border-radius:20px;
+    background-color:white;
+    display:flex;
+    overflow:hidden;
+}
+
+#left {
+    background-color:white;
+    height:600px;
+    width:500px;
+}
+
+#right {
+    height:600px;
+    width:500px;
+    background-color:hsl(202, 55%, 16%);
+    border-bottom-left-radius: 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+#h2L {
+    margin:30px;
+    color: hsl(202, 55%, 16%);
+}
+
+#clear {
+    border:none;
+    background-color:white;
+    color:hsl(200, 24%, 40%);
+    text-decoration:underline;
+    margin-right:30px;
+}
+
+#headline {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:15px;
+}
+
+form {
+    margin-left:30px;
+}
+
+label {
+    font-size:14px;
+    color: hsl(200, 24%, 40%);
+    font-weight:600;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    border: 1px solid hsl(200, 24%, 40%); 
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+    margin-top: 10px;
+}
+
+#amount-box {
+    width: 430px;
+    height: 40px;
+}
+
+#term-box, #rate-box {
+    width: 205px;
+    height: 40px;
+}
+
+.sign {
+    background-color: hsl(202, 86%, 94%);
+    color: hsl(200, 24%, 40%);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    font-weight: bold;
+    font-size: 14px;
+    user-select: none;
+}
+
+input[type="number"] {
+    border: none; 
+    outline: none; 
+    height: 100%;
+    width: 100%;
+    padding: 0 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: hsl(202, 55%, 16%);
+}
+
+#amount, #term, #rate {
+    margin-top: 0; 
+}
+
+.box:focus-within {
+    border-color: hsl(61, 70%, 52%);
+}
+
+.box:focus-within .sign {
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+}
+
+#inputs {
+    display:flex;
+    gap:10px;
+}
+
+#pType {
+    color: hsl(200, 24%, 40%);
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.labelType {
+    display:flex;
+    flex-direction:row-reverse;
+    justify-content:flex-end;
+    align-items:center;
+    color:hsl(202, 55%, 16%);
+    font-weight:800;
+    border: 1px solid hsl(200, 24%, 40%);
+    width:430px;
+    height:47px;
+    border-radius:3px;
+    cursor: pointer;
+}
+
+.labelType input {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:15px;
+    accent-color: hsl(61, 70%, 52%);
+}
+
+#calculate {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:none;
+    border-radius:100px;
+    background-color:hsl(61, 70%, 52%);
+    margin-top:25px;
+    height:50px;
+    width:300px;
+    color: hsl(201, 55%, 20%);
+    font-weight:780;
+    font-size:16px;
+    padding-top:1px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    cursor: pointer;
+}
+
+#calculate img {
+    margin:10px;
+}
+
+#calculate:hover {
+    background-color:hsl(61, 70%, 72%);
+}
+
+#amount::placeholder {
+    padding-left:15px;
+    color:hsl(202, 42%, 39%);
+    font-size:16px;
+    font-weight:540;
+    background-color:hsl(202, 86%, 94%);
+    height:70px;
+    width:20px;
+}
+
+.error-msg {
+    color: hsl(4, 69%, 50%);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 6px;
+    display: none;
+}
+
+.box.error {
+    border-color: hsl(4, 69%, 50%) !important;
+}
+
+.box.error .sign {
+    background-color: hsl(4, 69%, 50%) !important;
+    color: white !important;
+}
+
+.box.error ~ .error-msg {
+    display: block;
+}
+
+
+#empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#h2R {
+    color:white;
+    margin-top:20px;
+}
+
+#pR1 {
+    color:hsl(203, 41%, 72%);
+    padding-left:40px;
+    padding-right:40px;
+    padding-top:15px;
+}
+
+#pR2 {
+    color:hsl(203, 41%, 72%);
+}
+
+.labelType.selected {
+    border-color: hsl(61, 70%, 45%) !important;
+    background-color: hsl(61, 70%, 96%) !important;
+}
+
+#results-state {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 40px;
+}
+
+.results-title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.results-desc {
+    color: hsl(203, 41%, 72%);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.results-card {
+    background-color: hsl(202, 56%, 12%);
+    border-top: 4px solid hsl(61, 70%, 52%);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.card-label {
+    color: hsl(203, 41%, 72%);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#monthly-payment {
+    color: hsl(61, 70%, 52%);
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card-divider {
+    border: none;
+    border-top: 1px solid rgba(154, 190, 213, 0.15);
+    margin-bottom: 30px;
+}
+
+#total-payment {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    #main {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    #h2L {
+        margin-top:0;
+        margin-bottom:0;
+    }
+
+    #headline {
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    #clear {
+        margin-left:30px;
+        margin-bottom:25px;
+        margin-top:10px;
+        font-size:18px;
+    }
+
+    #left, #right {
+        width: 100%;
+        height: auto;
+    }
+
+    #left {
+        padding: 20px 0;
+    }
+
+    form {
+        margin-right: 30px;
+    }
+
+    label {
+        font-size:18px;
+    }
+
+    #amount-box, .labelType {
+        width: 100%;
+        height:55px;
+    }
+
+    #inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #term-box, #rate-box {
+        width: 100%;
+        height:55px;
+    }
+
+    #calculate {
+        width: 100%;
+        margin-top: 30px;
+        height:55px;
+        font-size:21px
+    }
+
+    #right {
+        border-bottom-left-radius: 0;
+        padding: 40px 20px;
+    }
+
+    #pR1, #pR2 {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        font-size:18px;
+    }
+}
